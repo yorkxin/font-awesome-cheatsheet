@@ -17,11 +17,16 @@ Double-click "Font Awesome.docset"
 
 ## TODO
 
-* Preview for multiple sizes
+* Add [examples for features](http://fontawesome.io/examples/):
+  * List Icons
+  * Bordered & Pulled Icons
+  * Spinning Icons
+  * Rotated & Flipped
+  * Stacked Icons
 * Contribute to https://github.com/Kapeli/cheatsheets
 
 ## License
 
 The converter itself is under MIT-License. See `MIT-LICENSE` file.
 
-Some examples are copied from the official website, which is licensed under the [CC BY 3.0 License](http://creativecommons.org/licenses/by/3.0/).
+Some examples are copied from the [official website](http://fontawesome.io/examples/), which is licensed under the [CC BY 3.0 License](http://creativecommons.org/licenses/by/3.0/).
