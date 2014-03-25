@@ -22,5 +22,6 @@ Double-click "Font Awesome.docset"
 
 ## License
 
-MIT-License. See `MIT-LICENSE` file.
+The converter itself is under MIT-License. See `MIT-LICENSE` file.
 
+Some examples are copied from the official website, which is licensed under the [CC BY 3.0 License](http://creativecommons.org/licenses/by/3.0/).

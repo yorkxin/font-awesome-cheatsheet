@@ -149,4 +149,8 @@ cheatsheet do
       end
     end
   end
+
+  notes <<-EOS
+  * Font Awesome by Dave Gandy - http://fontawesome.io
+  EOS
 end
