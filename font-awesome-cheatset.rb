@@ -46,6 +46,59 @@ cheatsheet do
 
   introduction "Lookup Font Awesome icons."
 
+  category do
+    id "Basic Usage"
+
+    entry do
+      notes <<-EOS
+      <i class="fa fa-camera-retro"></i>
+
+      ```html
+      <i class="fa fa-camera-retro"></i>
+      ```
+      EOS
+    end
+  end
+
+  category do
+    id "Larger Icons"
+
+    entry do
+      command "fa-lg"
+      name "<i class='fa fa-camera-retro fa-lg'></i> <span hidden>33% Larger</span>"
+
+      td_notes "33% Larger"
+    end
+
+    entry do
+      command "fa-2x"
+      name "<i class='fa fa-camera-retro fa-2x'></i> <span hidden>2x</span>"
+
+      td_notes "2x"
+    end
+
+    entry do
+      command "fa-3x"
+      name "<i class='fa fa-camera-retro fa-3x'></i> <span hidden>3x</span>"
+
+      td_notes "3x"
+    end
+
+    entry do
+      command "fa-4x"
+      name "<i class='fa fa-camera-retro fa-4x'></i> <span hidden>4x</span>"
+
+      td_notes "4x"
+    end
+
+    entry do
+      command "fa-5x"
+      name "<i class='fa fa-camera-retro fa-5x'></i> <span hidden>5x</span>"
+
+      td_notes "5x"
+    end
+  end
+
   [
     'Web Application Icons',
     'Form Control Icons',
