@@ -99,6 +99,27 @@ cheatsheet do
     end
   end
 
+  category do
+    id "Styles"
+
+    entry do
+      command "fa-fw"
+      name <<-EOS
+        <p><i class='fa fa-desktop fa-lg fa-fw' style="background-color: aliceblue;"></i></p>
+        <p><i class='fa fa-mobile  fa-lg fa-fw' style="background-color: aliceblue;"></i></p>
+        <span hidden>Fixed Width Icons</span>
+      EOS
+
+      td_notes <<-EOS
+      Fixed Width Icons
+
+      Use `fa-fw` to set icons at a fixed width.
+      Great to use when variable icon widths throw off alignment.
+      Especially useful in things like nav lists.
+      EOS
+    end
+  end
+
   [
     'Web Application Icons',
     'Form Control Icons',
