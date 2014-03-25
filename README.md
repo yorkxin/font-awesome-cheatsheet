@@ -5,7 +5,7 @@ A Font Awesome cheatsheet for Dash 2.
 ## Before you Build
 
     bundle install
-    git submodule init # fetch Font Awesome repository
+    git submodule update # fetch Font Awesome repository
 
 ## Build
 
