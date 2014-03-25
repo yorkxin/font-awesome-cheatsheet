@@ -44,7 +44,7 @@ cheatsheet do
     }
   EOS
 
-  introduction "Font Awesome Lookup"
+  introduction "Lookup Font Awesome icons."
 
   [
     'Web Application Icons',
