@@ -28,6 +28,8 @@ cheatsheet do
   keyword 'fa'           # Used as the initial search keyword (listed in Preferences > Docsets)
   resources 'assets'  # An optional resources folder which can contain images or anything else
 
+  source_url 'https://github.com/chitsaou/font-awesome-cheatsheet'
+
   style <<-EOS
     @import 'assets/css/font-awesome.css'
   EOS
