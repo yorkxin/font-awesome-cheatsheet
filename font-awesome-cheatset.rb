@@ -31,7 +31,17 @@ cheatsheet do
   source_url 'https://github.com/chitsaou/font-awesome-cheatsheet'
 
   style <<-EOS
-    @import 'assets/css/font-awesome.css'
+    @import 'assets/css/font-awesome.css';
+
+    td:nth-child(1) {
+      width: 16em;
+      text-align: left;
+    }
+
+    td:nth-child(2) {
+      width: 1.5em;
+      text-align: center;
+    }
   EOS
 
   introduction "Font Awesome Lookup"
@@ -53,17 +63,14 @@ cheatsheet do
 
       icon_category.icons.each do |icon|
         entry do
-          name icon.name
-
+          name "<i class='fa fa-#{icon.id} fa-lg fa-fw'></i> <span hidden>#{icon.name}</span>"
           command "fa-#{icon.id}"
+
+          td_notes icon.name
 
           icon.aliases.each do |alias_id|
             command "fa-#{alias_id}"
           end
-
-          notes <<-EOS
-            <i class='fa fa-#{icon.id}'></i>
-          EOS
         end
       end
     end
