@@ -1,1 +1,4 @@
 .bundle/
+.DS_Store
+Font Awesome.docset
+assets/
