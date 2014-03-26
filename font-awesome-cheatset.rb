@@ -125,6 +125,11 @@ cheatsheet do
       Use `fa-fw` to set icons at a fixed width.
       Great to use when variable icon widths throw off alignment.
       Especially useful in things like nav lists.
+
+      ```html
+      <p><i class='fa fa-desktop fa-fw'></i></p>
+      <p><i class='fa fa-mobile  fa-fw'></i></p>
+      ```
       EOS
     end
   end
