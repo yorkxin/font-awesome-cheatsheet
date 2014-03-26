@@ -33,12 +33,12 @@ cheatsheet do
   style <<-EOS
     @import 'assets/css/font-awesome.css';
 
-    td:nth-child(1) {
+    td.command {
       width: 16em;
       text-align: left;
     }
 
-    td:nth-child(2) {
+    .iterate-icons td:nth-child(2) {
       width: 1.5em;
       text-align: center;
     }
@@ -134,6 +134,8 @@ cheatsheet do
       icon_category = Category.find(category_name)
 
       id icon_category.name
+
+      html_class "iterate-icons"
 
       icon_category.icons.each do |icon|
         entry do
