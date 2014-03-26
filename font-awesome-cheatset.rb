@@ -132,6 +132,37 @@ cheatsheet do
       ```
       EOS
     end
+
+    entry do
+      command "fa-ul"
+      command "fa-li"
+
+      name "List Icons"
+
+      td_notes <<-EOS
+      <ul class="fa-ul">
+        <li><i class="fa-li fa fa-check-square"></i>List icons</li>
+        <li><i class="fa-li fa fa-check-square"></i>can be used</li>
+        <li><i class="fa-li fa fa-square-o"></i>to replace</li>
+        <li><i class="fa-li fa fa-square"></i>default bullets in lists</li>
+      </ul>
+      EOS
+
+      td_notes <<-EOS
+      List Icons
+
+      Use `fa-ul` and `fa-li` to easily replace default bullets in unordered lists.
+
+      ```html
+      <ul class="fa-ul">
+        <li><i class="fa-li fa fa-check-square"></i>List icons</li>
+        <li><i class="fa-li fa fa-check-square"></i>can be used</li>
+        <li><i class="fa-li fa fa-square-o"></i>to replace</li>
+        <li><i class="fa-li fa fa-square"></i>default bullets in lists</li>
+      </ul>
+      ```
+      EOS
+    end
   end
 
   [
