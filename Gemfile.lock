@@ -1,9 +1,7 @@
-GIT
-  remote: git://github.com/chitsaou/cheatset.git
-  revision: d43ec2fc8b1fd9ce7d9498056e957e2870df6b83
-  branch: html-class
+GEM
+  remote: https://rubygems.org/
   specs:
-    cheatset (1.2.9)
+    cheatset (1.2.10)
       haml
       plist
       redcarpet
@@ -12,10 +10,6 @@ GIT
       sqlite3
       thor
       unindent
-
-GEM
-  remote: https://rubygems.org/
-  specs:
     haml (4.0.5)
       tilt
     mini_portile (0.5.3)
@@ -36,5 +30,5 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  cheatset!
+  cheatset (~> 1.2.10)
   rake
