@@ -20,7 +20,6 @@ Or double-click "Font Awesome.docset"
 ## TODO
 
 * Add [examples for features](http://fontawesome.io/examples/):
-  * List Icons
   * Bordered & Pulled Icons
   * Spinning Icons
   * Rotated & Flipped
