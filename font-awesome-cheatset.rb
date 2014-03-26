@@ -42,6 +42,10 @@ cheatsheet do
       width: 1.5em;
       text-align: center;
     }
+
+    .example .description {
+      display: none;
+    }
   EOS
 
   introduction "Lookup Font Awesome icons."
@@ -62,6 +66,8 @@ cheatsheet do
 
   category do
     id "Larger Icons"
+
+    html_class "iterate-icons"
 
     entry do
       command "fa-lg"
@@ -102,12 +108,15 @@ cheatsheet do
   category do
     id "Styles"
 
+    html_class "example"
+
     entry do
       command "fa-fw"
-      name <<-EOS
+      name "Fixed Width"
+
+      td_notes <<-EOS
         <p><i class='fa fa-desktop fa-lg fa-fw' style="background-color: aliceblue;"></i></p>
         <p><i class='fa fa-mobile  fa-lg fa-fw' style="background-color: aliceblue;"></i></p>
-        <span hidden>Fixed Width Icons</span>
       EOS
 
       td_notes <<-EOS
