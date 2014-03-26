@@ -229,6 +229,100 @@ cheatsheet do
     end
   end
 
+  category do
+    id "Rotate & Flip"
+
+    entry do
+      td_command ""
+      name "Normal"
+
+      td_notes <<-EOS
+      <i class="fa fa-lg fa-music"></i>
+      EOS
+
+      td_notes <<-EOS
+      ```html
+      <i class="fa fa-lg fa-music"></i>
+      ```
+      EOS
+    end
+
+    entry do
+      command "fa-rotate-90"
+      name "Rotate 90°"
+
+      td_notes <<-EOS
+      <i class="fa fa-lg fa-music fa-rotate-90"></i>
+      EOS
+
+      td_notes <<-EOS
+      ```html
+      <i class="fa fa-lg fa-music fa-rotate-90"></i>
+      ```
+      EOS
+    end
+
+    entry do
+      command "fa-rotate-180"
+      name "Rotate 180°"
+
+      td_notes <<-EOS
+      <i class="fa fa-lg fa-music fa-rotate-180"></i>
+      EOS
+
+      td_notes <<-EOS
+      ```html
+      <i class="fa fa-lg fa-music fa-rotate-180"></i>
+      ```
+      EOS
+    end
+
+    entry do
+      command "fa-rotate-270"
+      name "Rotate 270°"
+      td_notes <<-EOS
+      <i class="fa fa-lg fa-music fa-rotate-270"></i>
+      EOS
+
+      td_notes <<-EOS
+      ```html
+      <i class="fa fa-lg fa-music fa-rotate-270"></i>
+      ```
+      EOS
+    end
+
+    entry do
+      command "fa-flip-horizontal"
+      name "Flip Horizontally"
+
+      td_notes <<-EOS
+      <i class="fa fa-lg fa-music fa-flip-horizontal"></i>
+      EOS
+
+      td_notes <<-EOS
+      ```html
+      <i class="fa fa-lg fa-music fa-flip-horizontal"></i>
+      ```
+      EOS
+    end
+
+    entry do
+      command "fa-flip-vertical"
+      name "Filp Vertically"
+
+
+      td_notes <<-EOS
+      <i class="fa fa-lg fa-music fa-flip-vertical"></i>
+      EOS
+
+      td_notes <<-EOS
+      ```html
+      <i class="fa fa-lg fa-music fa-flip-vertical"></i>
+      ```
+      EOS
+    end
+  end
+
   [
     'Web Application Icons',
     'Form Control Icons',
