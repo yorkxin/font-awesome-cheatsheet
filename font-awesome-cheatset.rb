@@ -101,6 +101,42 @@ cheatsheet do
   end
 
   category do
+    id "Changing Color"
+    html_class "example"
+
+    entry do
+      command "fa-inverse"
+
+      name "Inverse Color (White)"
+
+      td_notes <<-EOS
+        <p style='background-color: aliceblue'><i class="fa fa-tags fa-inverse"></i></p>
+      EOS
+
+      td_notes <<-EOS
+      ```html
+      <i class="fa fa-tags fa-inverse"></i>
+      ```
+      EOS
+    end
+
+    entry do
+      td_command ""
+      name "Any Color"
+
+      td_notes <<-EOS
+        <i class="fa fa-tags" style="color: #bada55"></i>
+      EOS
+
+      td_notes <<-EOS
+      ```html
+      <i class="fa fa-tags" style="color: #bada55"></i>
+      ```
+      EOS
+    end
+  end
+
+  category do
     id "Layouts"
 
     html_class "example"
