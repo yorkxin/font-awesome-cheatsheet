@@ -34,8 +34,11 @@ cheatsheet do
     @import 'assets/css/font-awesome.css';
 
     td.command {
-      width: 16em;
       text-align: left;
+    }
+
+    .iterate-icons td.command {
+      width: 16em;
     }
 
     .iterate-icons td:nth-child(2) {
