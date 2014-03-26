@@ -156,6 +156,41 @@ cheatsheet do
       ```
       EOS
     end
+
+    entry do
+      command "fa-border"
+
+      name "Bordered"
+
+      td_notes <<-EOS
+      <i class="fa fa-quote-left fa-lg fa-border"></i>
+      EOS
+
+      td_notes <<-EOS
+      ```html
+      <i class="fa fa-quote-left fa-border"></i>
+      ```
+      EOS
+    end
+
+    entry do
+      command "pull-left"
+      command "pull-right"
+
+      name "Pull Left / Right"
+
+      td_notes <<-EOS
+      <i class="fa fa-quote-left pull-left fa-lg fa-border"></i>
+      Lorem Ipsum
+      EOS
+
+      td_notes <<-EOS
+      ```html
+      <i class="fa fa-quote-left pull-left fa-border"></i>
+      Lorem Ipusm
+      ```
+      EOS
+    end
   end
 
   [
