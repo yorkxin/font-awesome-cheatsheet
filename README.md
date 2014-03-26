@@ -9,11 +9,13 @@ A Font Awesome cheatsheet for Dash 2.
 
 ## Build
 
-    cheatset generate font-awesome-cheatset.rb
+    bundle exec rake
 
 ## Install
 
-Double-click "Font Awesome.docset"
+    rake install
+
+Or double-click "Font Awesome.docset"
 
 ## TODO
 
