@@ -101,7 +101,7 @@ cheatsheet do
   end
 
   category do
-    id "Styles"
+    id "Layouts"
 
     html_class "example"
 
@@ -136,10 +136,9 @@ cheatsheet do
 
       td_notes <<-EOS
       <ul class="fa-ul">
-        <li><i class="fa-li fa fa-check-square"></i>List icons</li>
-        <li><i class="fa-li fa fa-check-square"></i>can be used</li>
-        <li><i class="fa-li fa fa-square-o"></i>to replace</li>
-        <li><i class="fa-li fa fa-square"></i>default bullets in lists</li>
+        <li><i class="fa-li fa fa-check-square"></i>Lorem</li>
+        <li><i class="fa-li fa fa-square-o"></i>ipsum</li>
+        <li><i class="fa-li fa fa-square"></i>dolar</li>
       </ul>
       EOS
 
@@ -150,10 +149,9 @@ cheatsheet do
 
       ```html
       <ul class="fa-ul">
-        <li><i class="fa-li fa fa-check-square"></i>List icons</li>
-        <li><i class="fa-li fa fa-check-square"></i>can be used</li>
-        <li><i class="fa-li fa fa-square-o"></i>to replace</li>
-        <li><i class="fa-li fa fa-square"></i>default bullets in lists</li>
+        <li><i class="fa-li fa fa-check-square"></i>Lorem</li>
+        <li><i class="fa-li fa fa-square-o"></i>ipsum</li>
+        <li><i class="fa-li fa fa-square"></i>dolar</li>
       </ul>
       ```
       EOS
