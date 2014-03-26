@@ -51,21 +51,13 @@ cheatsheet do
     }
   EOS
 
-  introduction "Lookup Font Awesome icons."
+  introduction <<-EOS
+  ## Basic Example
 
-  category do
-    id "Basic Usage"
-
-    entry do
-      notes <<-EOS
-      <i class="fa fa-camera-retro"></i>
-
-      ```html
-      <i class="fa fa-camera-retro"></i>
-      ```
-      EOS
-    end
-  end
+  ```html
+  <i class="fa fa-camera-retro"></i>
+  ```
+  EOS
 
   category do
     id "Larger Icons"
