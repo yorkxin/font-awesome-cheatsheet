@@ -113,11 +113,7 @@ cheatsheet do
         <p style='background-color: aliceblue'><i class="fa fa-tags fa-inverse"></i></p>
       EOS
 
-      td_notes <<-EOS
-      ```html
-      <i class="fa fa-tags fa-inverse"></i>
-      ```
-      EOS
+      td_notes "Inverse Color (White)"
     end
 
     entry do
@@ -128,11 +124,7 @@ cheatsheet do
         <i class="fa fa-tags" style="color: #bada55"></i>
       EOS
 
-      td_notes <<-EOS
-      ```html
-      <i class="fa fa-tags" style="color: #bada55"></i>
-      ```
-      EOS
+      td_notes "Apply CSS `color: ` property to change color."
     end
   end
 
@@ -152,15 +144,6 @@ cheatsheet do
 
       td_notes <<-EOS
       Fixed Width Icons
-
-      Use `fa-fw` to set icons at a fixed width.
-      Great to use when variable icon widths throw off alignment.
-      Especially useful in things like nav lists.
-
-      ```html
-      <p><i class='fa fa-desktop fa-fw'></i></p>
-      <p><i class='fa fa-mobile  fa-fw'></i></p>
-      ```
       EOS
     end
 
@@ -179,9 +162,7 @@ cheatsheet do
       EOS
 
       td_notes <<-EOS
-      List Icons
-
-      Use `fa-ul` and `fa-li` to easily replace default bullets in unordered lists.
+      List Icons (replace default bullets in `<ul>`)
 
       ```html
       <ul class="fa-ul">
@@ -203,9 +184,7 @@ cheatsheet do
       EOS
 
       td_notes <<-EOS
-      ```html
-      <i class="fa fa-quote-left fa-border"></i>
-      ```
+      Bordered Icons
       EOS
     end
 
@@ -221,9 +200,11 @@ cheatsheet do
       EOS
 
       td_notes <<-EOS
+      Use Pull Left / Right to make it floating
+
       ```html
       <i class="fa fa-quote-left pull-left fa-border"></i>
-      Lorem Ipusm
+      Lorem Ipsum
       ```
       EOS
     end
@@ -232,94 +213,61 @@ cheatsheet do
   category do
     id "Rotate & Flip"
 
-    entry do
-      td_command ""
-      name "Normal"
-
-      td_notes <<-EOS
-      <i class="fa fa-lg fa-music"></i>
-      EOS
-
-      td_notes <<-EOS
-      ```html
-      <i class="fa fa-lg fa-music"></i>
-      ```
-      EOS
-    end
+    html_class "iterate-icons"
 
     entry do
       command "fa-rotate-90"
-      name "Rotate 90°"
 
-      td_notes <<-EOS
+      name <<-EOS
       <i class="fa fa-lg fa-music fa-rotate-90"></i>
+      <span hidden>Rotate 90°</span>
       EOS
 
-      td_notes <<-EOS
-      ```html
-      <i class="fa fa-lg fa-music fa-rotate-90"></i>
-      ```
-      EOS
+      td_notes "Rotate 90°"
     end
 
     entry do
       command "fa-rotate-180"
-      name "Rotate 180°"
 
-      td_notes <<-EOS
+      name <<-EOS
       <i class="fa fa-lg fa-music fa-rotate-180"></i>
+      <span hidden>Rotate 180°</span>
       EOS
 
-      td_notes <<-EOS
-      ```html
-      <i class="fa fa-lg fa-music fa-rotate-180"></i>
-      ```
-      EOS
+      td_notes "Rotate 180°"
     end
 
     entry do
       command "fa-rotate-270"
-      name "Rotate 270°"
-      td_notes <<-EOS
+
+      name <<-EOS
       <i class="fa fa-lg fa-music fa-rotate-270"></i>
+      <span hidden>Rotate 270°</span>
       EOS
 
-      td_notes <<-EOS
-      ```html
-      <i class="fa fa-lg fa-music fa-rotate-270"></i>
-      ```
-      EOS
+      td_notes "Rotate 270°"
     end
 
     entry do
       command "fa-flip-horizontal"
-      name "Flip Horizontally"
 
-      td_notes <<-EOS
+      name <<-EOS
       <i class="fa fa-lg fa-music fa-flip-horizontal"></i>
+      <span hidden>Flip Horizontally</span>
       EOS
 
-      td_notes <<-EOS
-      ```html
-      <i class="fa fa-lg fa-music fa-flip-horizontal"></i>
-      ```
-      EOS
+      td_notes "Flip Horizontally"
     end
 
     entry do
       command "fa-flip-vertical"
-      name "Filp Vertically"
 
-
-      td_notes <<-EOS
+      name <<-EOS
       <i class="fa fa-lg fa-music fa-flip-vertical"></i>
+      <span hidden>Filp Vertically</span>
       EOS
 
-      td_notes <<-EOS
-      ```html
-      <i class="fa fa-lg fa-music fa-flip-vertical"></i>
-      ```
-      EOS
+      td_notes "Filp Vertically"
     end
   end
 
