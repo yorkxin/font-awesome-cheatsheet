@@ -138,7 +138,7 @@ cheatsheet do
       name "Inverse Color (White)"
 
       notes <<-EOS
-        <p style='background-color: aliceblue'><i class="fa fa-tags fa-inverse"></i></p>
+        <p style='background-color: aliceblue'><i class="fa fa-tags fa-fw fa-2x fa-inverse"></i></p>
       EOS
 
       td_notes "Inverse Color (White)"
@@ -149,7 +149,7 @@ cheatsheet do
       name "Any Color"
 
       notes <<-EOS
-        <i class="fa fa-tags" style="color: #bada55"></i>
+        <i class="fa fa-tags fa-fw fa-2x" style="color: #bada55"></i>
       EOS
 
       td_notes "Apply CSS `color: ` property to change color."
@@ -166,8 +166,8 @@ cheatsheet do
       name "Fixed Width"
 
       notes <<-EOS
-        <p><i class='fa fa-desktop fa-lg fa-fw' style="background-color: aliceblue;"></i></p>
-        <p><i class='fa fa-mobile  fa-lg fa-fw' style="background-color: aliceblue;"></i></p>
+        <p><i class='fa fa-desktop fa-2x fa-fw' style="background-color: aliceblue;"></i></p>
+        <p><i class='fa fa-mobile  fa-2x fa-fw' style="background-color: aliceblue;"></i></p>
       EOS
 
       td_notes <<-EOS
@@ -247,7 +247,7 @@ cheatsheet do
       td_command ""
 
       name "Normal"
-      notes "<i class='fa fa-lg fa-music'></i>"
+      notes "<i class='fa fa-2x fa-fw fa-music'></i>"
 
       td_notes "Normal"
     end
@@ -256,7 +256,7 @@ cheatsheet do
       command "fa-rotate-90"
 
       name "Rotate 90°"
-      notes "<i class='fa fa-lg fa-music fa-rotate-90'></i>"
+      notes "<i class='fa fa-2x fa-fw fa-music fa-rotate-90'></i>"
 
       td_notes "Rotate 90°"
     end
@@ -265,7 +265,7 @@ cheatsheet do
       command "fa-rotate-180"
 
       name "Rotate 180°"
-      notes "<i class='fa fa-lg fa-music fa-rotate-180'></i>"
+      notes "<i class='fa fa-2x fa-fw fa-music fa-rotate-180'></i>"
 
       td_notes "Rotate 180°"
     end
@@ -274,7 +274,7 @@ cheatsheet do
       command "fa-rotate-270"
 
       name "Rotate 270°"
-      notes "<i class='fa fa-lg fa-music fa-rotate-270'></i>"
+      notes "<i class='fa fa-2x fa-fw fa-music fa-rotate-270'></i>"
 
       td_notes "Rotate 270°"
     end
@@ -283,7 +283,7 @@ cheatsheet do
       command "fa-flip-horizontal"
 
       name "Flip Horizontally"
-      notes "<i class='fa fa-lg fa-music fa-flip-horizontal'></i>"
+      notes "<i class='fa fa-2x fa-fw fa-music fa-flip-horizontal'></i>"
 
       td_notes "Flip Horizontally"
     end
@@ -292,7 +292,7 @@ cheatsheet do
       command "fa-flip-vertical"
 
       name "Filp Vertically"
-      notes "<i class='fa fa-lg fa-music fa-flip-vertical'></i>"
+      notes "<i class='fa fa-2x fa-fw fa-music fa-flip-vertical'></i>"
 
       td_notes "Filp Vertically"
     end
