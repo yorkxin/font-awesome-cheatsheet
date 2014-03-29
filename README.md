@@ -19,11 +19,6 @@ Or double-click "Font Awesome.docset"
 
 ## TODO
 
-* Add [examples for features](http://fontawesome.io/examples/):
-  * Bordered & Pulled Icons
-  * Spinning Icons
-  * Rotated & Flipped
-  * Stacked Icons
 * Contribute to https://github.com/Kapeli/cheatsheets
 
 ## License
