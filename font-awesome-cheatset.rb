@@ -97,34 +97,34 @@ cheatsheet do
 
     entry do
       command "fa-2x"
-      name "2x"
+      name "2x Large"
       notes "<i class='fa fa-camera-retro fa-2x'></i>"
 
-      td_notes "2x"
+      td_notes "2x Large"
     end
 
     entry do
       command "fa-3x"
-      name "3x"
+      name "3x Large"
       notes "<i class='fa fa-camera-retro fa-3x'></i>"
 
-      td_notes "3x"
+      td_notes "3x Large"
     end
 
     entry do
       command "fa-4x"
-      name "4x"
+      name "4x Large"
       notes "<i class='fa fa-camera-retro fa-4x'></i>"
 
-      td_notes "4x"
+      td_notes "4x Large"
     end
 
     entry do
       command "fa-5x"
-      name "5x"
+      name "5x Large"
       notes "<i class='fa fa-camera-retro fa-5x'></i>"
 
-      td_notes "5x"
+      td_notes "5x Large"
     end
   end
 
