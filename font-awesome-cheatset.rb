@@ -37,17 +37,30 @@ cheatsheet do
       text-align: left;
     }
 
+    td.description .name {
+      display: none;
+    }
+
     .iterate-icons td.command {
       width: 16em;
     }
 
-    .iterate-icons td:nth-child(2) {
+    .iterate-icons td.description {
       width: 1.5em;
       text-align: center;
     }
 
-    .example .description {
-      display: none;
+    .example-single-command td.command {
+      width: 12em;
+    }
+
+    .example-single-command td.description {
+      width: 1%; /* width fit content size */
+    }
+
+    .example-single-command.category-layouts td.description {
+      /* override width & wrapping for Layouts category */
+      width: 15em;
     }
   EOS
 
@@ -62,39 +75,52 @@ cheatsheet do
   category do
     id "Larger Icons"
 
-    html_class "iterate-icons"
+    html_class "example-single-command"
+
+    entry do
+      command ""
+      name "Normal Size"
+      notes "<i class='fa fa-camera-retro'></i>"
+
+      td_notes "Normal Size"
+    end
 
     entry do
       command "fa-lg"
-      name "<i class='fa fa-camera-retro fa-lg'></i> <span hidden>33% Larger</span>"
+      name "33% Larger"
+      notes "<i class='fa fa-camera-retro fa-lg'></i>"
 
       td_notes "33% Larger"
     end
 
     entry do
       command "fa-2x"
-      name "<i class='fa fa-camera-retro fa-2x'></i> <span hidden>2x</span>"
+      name "2x"
+      notes "<i class='fa fa-camera-retro fa-2x'></i>"
 
       td_notes "2x"
     end
 
     entry do
       command "fa-3x"
-      name "<i class='fa fa-camera-retro fa-3x'></i> <span hidden>3x</span>"
+      name "3x"
+      notes "<i class='fa fa-camera-retro fa-3x'></i>"
 
       td_notes "3x"
     end
 
     entry do
       command "fa-4x"
-      name "<i class='fa fa-camera-retro fa-4x'></i> <span hidden>4x</span>"
+      name "4x"
+      notes "<i class='fa fa-camera-retro fa-4x'></i>"
 
       td_notes "4x"
     end
 
     entry do
       command "fa-5x"
-      name "<i class='fa fa-camera-retro fa-5x'></i> <span hidden>5x</span>"
+      name "5x"
+      notes "<i class='fa fa-camera-retro fa-5x'></i>"
 
       td_notes "5x"
     end
@@ -102,14 +128,14 @@ cheatsheet do
 
   category do
     id "Changing Color"
-    html_class "example"
+    html_class "example-single-command"
 
     entry do
       command "fa-inverse"
 
       name "Inverse Color (White)"
 
-      td_notes <<-EOS
+      notes <<-EOS
         <p style='background-color: aliceblue'><i class="fa fa-tags fa-inverse"></i></p>
       EOS
 
@@ -117,10 +143,10 @@ cheatsheet do
     end
 
     entry do
-      td_command ""
+      command ""
       name "Any Color"
 
-      td_notes <<-EOS
+      notes <<-EOS
         <i class="fa fa-tags" style="color: #bada55"></i>
       EOS
 
@@ -131,13 +157,13 @@ cheatsheet do
   category do
     id "Layouts"
 
-    html_class "example"
+    html_class "example-single-command category-layouts"
 
     entry do
       command "fa-fw"
       name "Fixed Width"
 
-      td_notes <<-EOS
+      notes <<-EOS
         <p><i class='fa fa-desktop fa-lg fa-fw' style="background-color: aliceblue;"></i></p>
         <p><i class='fa fa-mobile  fa-lg fa-fw' style="background-color: aliceblue;"></i></p>
       EOS
@@ -153,7 +179,7 @@ cheatsheet do
 
       name "List Icons"
 
-      td_notes <<-EOS
+      notes <<-EOS
       <ul class="fa-ul">
         <li><i class="fa-li fa fa-check-square"></i>Lorem</li>
         <li><i class="fa-li fa fa-square-o"></i>ipsum</li>
@@ -179,7 +205,7 @@ cheatsheet do
 
       name "Bordered"
 
-      td_notes <<-EOS
+      notes <<-EOS
       <i class="fa fa-quote-left fa-lg fa-border"></i>
       EOS
 
@@ -194,9 +220,9 @@ cheatsheet do
 
       name "Pull Left / Right"
 
-      td_notes <<-EOS
+      notes <<-EOS
       <i class="fa fa-quote-left pull-left fa-lg fa-border"></i>
-      Lorem Ipsum
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
       EOS
 
       td_notes <<-EOS
@@ -204,7 +230,7 @@ cheatsheet do
 
       ```html
       <i class="fa fa-quote-left pull-left fa-border"></i>
-      Lorem Ipsum
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit.
       ```
       EOS
     end
@@ -213,15 +239,13 @@ cheatsheet do
   category do
     id "Rotate & Flip"
 
-    html_class "iterate-icons"
+    html_class "example-single-command"
 
     entry do
       command "fa-rotate-90"
 
-      name <<-EOS
-      <i class="fa fa-lg fa-music fa-rotate-90"></i>
-      <span hidden>Rotate 90°</span>
-      EOS
+      name "Rotate 90°"
+      notes "<i class='fa fa-lg fa-music fa-rotate-90'></i>"
 
       td_notes "Rotate 90°"
     end
@@ -229,10 +253,8 @@ cheatsheet do
     entry do
       command "fa-rotate-180"
 
-      name <<-EOS
-      <i class="fa fa-lg fa-music fa-rotate-180"></i>
-      <span hidden>Rotate 180°</span>
-      EOS
+      name "Rotate 180°"
+      notes "<i class='fa fa-lg fa-music fa-rotate-180'></i>"
 
       td_notes "Rotate 180°"
     end
@@ -240,10 +262,8 @@ cheatsheet do
     entry do
       command "fa-rotate-270"
 
-      name <<-EOS
-      <i class="fa fa-lg fa-music fa-rotate-270"></i>
-      <span hidden>Rotate 270°</span>
-      EOS
+      name "Rotate 270°"
+      notes "<i class='fa fa-lg fa-music fa-rotate-270'></i>"
 
       td_notes "Rotate 270°"
     end
@@ -251,10 +271,8 @@ cheatsheet do
     entry do
       command "fa-flip-horizontal"
 
-      name <<-EOS
-      <i class="fa fa-lg fa-music fa-flip-horizontal"></i>
-      <span hidden>Flip Horizontally</span>
-      EOS
+      name "Flip Horizontally"
+      notes "<i class='fa fa-lg fa-music fa-flip-horizontal'></i>"
 
       td_notes "Flip Horizontally"
     end
@@ -262,10 +280,8 @@ cheatsheet do
     entry do
       command "fa-flip-vertical"
 
-      name <<-EOS
-      <i class="fa fa-lg fa-music fa-flip-vertical"></i>
-      <span hidden>Filp Vertically</span>
-      EOS
+      name "Filp Vertically"
+      notes "<i class='fa fa-lg fa-music fa-flip-vertical'></i>"
 
       td_notes "Filp Vertically"
     end
@@ -290,8 +306,10 @@ cheatsheet do
 
       icon_category.icons.each do |icon|
         entry do
-          name "<i class='fa fa-#{icon.id} fa-lg fa-fw'></i> <span hidden>#{icon.name}</span>"
           command "fa-#{icon.id}"
+
+          name icon.name
+          notes "<i class='fa fa-#{icon.id} fa-2x fa-fw'></i>"
 
           td_notes icon.name
 
