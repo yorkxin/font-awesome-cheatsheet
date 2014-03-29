@@ -50,7 +50,8 @@ cheatsheet do
       text-align: center;
     }
 
-    .example-single-command td.command {
+    .example-single-command td.command,
+    .example-single-command td.td_command:nth-child(1) {
       width: 12em;
     }
 
@@ -59,8 +60,8 @@ cheatsheet do
     }
 
     .example-single-command.category-layouts td.description {
-      /* override width & wrapping for Layouts category */
-      width: 15em;
+      /* override width for Layouts category */
+      width: 13em;
     }
   EOS
 
@@ -78,7 +79,7 @@ cheatsheet do
     html_class "example-single-command"
 
     entry do
-      command ""
+      td_command ""
       name "Normal Size"
       notes "<i class='fa fa-camera-retro'></i>"
 
@@ -143,7 +144,7 @@ cheatsheet do
     end
 
     entry do
-      command ""
+      td_command ""
       name "Any Color"
 
       notes <<-EOS
@@ -240,6 +241,15 @@ cheatsheet do
     id "Rotate & Flip"
 
     html_class "example-single-command"
+
+    entry do
+      td_command ""
+
+      name "Normal"
+      notes "<i class='fa fa-lg fa-music'></i>"
+
+      td_notes "Normal"
+    end
 
     entry do
       command "fa-rotate-90"
