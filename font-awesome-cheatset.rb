@@ -59,6 +59,11 @@ cheatsheet do
       /* override width for Layouts category */
       width: 13em;
     }
+
+    /* bootstrap color for stacking example */
+    .text-danger {
+      color: #a94442;
+    }
   EOS
 
   introduction <<-EOS
@@ -291,6 +296,98 @@ cheatsheet do
 
       td_notes "Filp Vertically"
     end
+  end
+
+  category do
+    id "Stacking"
+
+    html_class "example-single-command single-icon"
+
+    entry do
+      command "fa-stack"
+
+      name "Stacking Example 1"
+
+      notes <<-EOS
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-square-o fa-stack-2x"></i>
+          <i class="fa fa-twitter  fa-stack-1x"></i>
+        </span>
+      EOS
+
+      td_notes <<-EOS
+        ```html
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-square-o fa-stack-2x"></i>
+          <i class="fa fa-twitter  fa-stack-1x"></i>
+        </span>
+        ```
+      EOS
+    end
+
+    entry do
+      name "Stacking Example 2"
+      td_command ""
+
+      notes <<-EOS
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-flag fa-stack-1x fa-inverse"></i>
+        </span>
+      EOS
+
+      td_notes <<-EOS
+        ```html
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-circle fa-stack-2x"></i>
+          <i class="fa fa-flag fa-stack-1x fa-inverse"></i>
+        </span>
+        ```
+      EOS
+    end
+
+    entry do
+      name "Stacking Example 3"
+      td_command ""
+
+      notes <<-EOS
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-square fa-stack-2x"></i>
+          <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
+        </span>
+      EOS
+
+      td_notes <<-EOS
+        ```html
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-square fa-stack-2x"></i>
+          <i class="fa fa-terminal fa-stack-1x fa-inverse"></i>
+        </span>
+        ```
+      EOS
+    end
+
+    entry do
+      name "Stacking Example 4"
+      td_command ""
+
+      notes <<-EOS
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-camera fa-stack-1x"></i>
+          <i class="fa fa-ban fa-stack-2x text-danger"></i>
+        </span>
+      EOS
+
+      td_notes <<-EOS
+        ```html
+        <span class="fa-stack fa-lg">
+          <i class="fa fa-camera fa-stack-1x"></i>
+          <i class="fa fa-ban fa-stack-2x text-danger"></i>
+        </span>
+        ```
+      EOS
+    end
+
   end
 
   [
