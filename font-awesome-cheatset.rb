@@ -45,18 +45,14 @@ cheatsheet do
       width: 16em;
     }
 
-    .iterate-icons td.description {
-      width: 1.5em;
+    .single-icon td.description {
+      width: 1%;
       text-align: center;
     }
 
     .example-single-command td.command,
     .example-single-command td.td_command:nth-child(1) {
       width: 12em;
-    }
-
-    .example-single-command td.description {
-      width: 1%; /* width fit content size */
     }
 
     .example-single-command.category-layouts td.description {
@@ -76,7 +72,7 @@ cheatsheet do
   category do
     id "Larger Icons"
 
-    html_class "example-single-command"
+    html_class "example-single-command single-icon"
 
     entry do
       td_command ""
@@ -129,7 +125,7 @@ cheatsheet do
 
   category do
     id "Changing Color"
-    html_class "example-single-command"
+    html_class "example-single-command single-icon"
 
     entry do
       command "fa-inverse"
@@ -240,7 +236,7 @@ cheatsheet do
   category do
     id "Rotate & Flip"
 
-    html_class "example-single-command"
+    html_class "example-single-command single-icon"
 
     entry do
       td_command ""
@@ -312,7 +308,7 @@ cheatsheet do
 
       id icon_category.name
 
-      html_class "iterate-icons"
+      html_class "iterate-icons single-icon"
 
       icon_category.icons.each do |icon|
         entry do
